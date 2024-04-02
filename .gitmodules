@@ -1,0 +1,10 @@
+[submodule "OpenFAST-matlab-toolbox"]
+	path = OpenFAST-matlab-toolbox
+	url = https://github.com/pusch-research/OpenFAST-matlab-toolbox
+[submodule "PMtools"]
+	path = PMtools
+	url = https://github.com/pusch-research/PMtools.git
+[submodule "OPtools"]
+	path = OPtools
+	url = https://github.com/pusch-research/OPtools.git
+
