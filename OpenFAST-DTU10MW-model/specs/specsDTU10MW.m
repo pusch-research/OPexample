@@ -1,4 +1,4 @@
-function [specs,simpleModel]=specsUSFLOWTv3(FST_fileName,CpCqCt_fileName)
+function [specs,simpleModel]=specsDTU10MW(FST_fileName,CpCqCt_fileName)
 
 %% definitions
 
@@ -9,7 +9,7 @@ specs.file.FST=FST_fileName;
 specs.file.specs=mfilename("fullpath");
 
 % meta data
-specs.meta.string='USFLOWT-v3';
+specs.meta.string='DTU10MW';
 specs.meta.dateString=datestr(now,'YY-MM-DD_hh-mm');
 
 % define operational parameters
@@ -42,7 +42,7 @@ end
 
 % build simpleModel
 Jrot=156348016; % From ED.sum file
-simpleModel=buildSimpleModel(...
+simpleModel=buildModelBEM(...
     CpCqCt_fileName,...
     specs.rGenPwr,...
     specs.FSTdata.AeroFile.AirDens,...
